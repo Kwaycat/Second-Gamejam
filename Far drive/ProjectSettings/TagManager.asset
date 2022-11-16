@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Skidmarks
+    uniqueID: 2458366315
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

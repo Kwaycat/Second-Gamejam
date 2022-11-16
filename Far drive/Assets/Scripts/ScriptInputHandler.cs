@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ScriptInputHandler : MonoBehaviour
 {
-
     ScriptCarMovement carMovement;
 
     void Awake() {
@@ -21,5 +20,7 @@ public class ScriptInputHandler : MonoBehaviour
         inputVector.y = Input.GetAxis("Vertical");
 
         carMovement.SetInputVector(inputVector);
+
+        
     }
 }
