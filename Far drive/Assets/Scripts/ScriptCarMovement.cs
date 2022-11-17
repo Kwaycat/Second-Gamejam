@@ -10,6 +10,7 @@ public class ScriptCarMovement : MonoBehaviour
     public float turnFactor = 3.5f;
     public float maxSpeed = 20f;
 
+    public float skidTollerance = 1f;
 
     //Local variables
     float accelerationInput = 0;
@@ -86,6 +87,28 @@ public class ScriptCarMovement : MonoBehaviour
         Vector2 rightVelocity = transform.right * Vector2.Dot(rb.velocity, transform.right);
 
         rb.velocity = forwardVelocity + rightVelocity * driftFactor;
+    }
+
+    float GetLateralVelocity() {
+        //Returns how fast the car is moving sideways
+        return Vector2.Dot(transform.right, rb.velocity);
+    }
+
+    public bool IsTireScreeching(out float lateralVelocity, out bool isBreaking) {
+        lateralVelocity = GetLateralVelocity();
+        isBreaking = false;
+
+        //Check if we are moving forward and if the player is hitting the brakes. In that case the tires should screech
+        if (accelerationInput < 0 && velocityVsUp > 0) {
+            isBreaking = true;
+            return true;
+        }
+
+        //If we have a lot of side movement then the tires should be screeching
+        if (Mathf.Abs(GetLateralVelocity()) > skidTollerance)
+            return true;
+
+        return false;
     }
 
     public void SetInputVector(Vector2 inputVector) {

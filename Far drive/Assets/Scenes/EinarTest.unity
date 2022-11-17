@@ -235,17 +235,69 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2067354755998765599, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067354755998765599, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1836600981
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067354755998765599, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067354755998765599, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.a
+      value: 0.827451
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067354755998765599, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.122641504
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067354755998765599, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.122641504
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067354755998765599, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0.122641504
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067354755998765599, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067354755998765599, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.b
+      value: 0.1792453
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067354755998765599, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.g
+      value: 0.1792453
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067354755998765599, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 0.1792453
+      objectReference: {fileID: 0}
+    - target: {fileID: 5653648406218398179, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5653648406218398179, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 6901104752973447411, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6901104752973447411, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2598844
+      value: -1.23
       objectReference: {fileID: 0}
     - target: {fileID: 6901104752973447411, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.76576376
+      value: 3.93
       objectReference: {fileID: 0}
     - target: {fileID: 6901104752973447411, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
       propertyPath: m_LocalPosition.z
@@ -281,15 +333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6901104752973447413, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
       propertyPath: driftFactor
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6901104752973447415, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
       propertyPath: m_Name
       value: Car
-      objectReference: {fileID: 0}
-    - target: {fileID: 6901104752973447415, guid: 1d32021e15adfd348ae14d5fe902af14, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
