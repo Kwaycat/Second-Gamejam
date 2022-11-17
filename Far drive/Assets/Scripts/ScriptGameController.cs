@@ -10,6 +10,8 @@ public class ScriptGameController : MonoBehaviour
     public TMP_Text uIText;
     public Scene victoryScene;
 
+    public bool winScreen = false;
+
     public bool goGetMilk = false;
     public bool gotMilk = false;
     public bool gotHome = false;

@@ -71,6 +71,10 @@ public class ScriptCarMovement : MonoBehaviour
     }
 
     void ApplySteeringForce() {
+        //Flip turning if reversing
+        if (accelerationInput != 1 && velocityVsUp < 0) {
+            steeringInput = -steeringInput;
+        }
         //Limit the cars ability to turn when moving slowly
         float minSpeedBeforeAllowTurningFactor = (rb.velocity.magnitude / 8);
         minSpeedBeforeAllowTurningFactor = Mathf.Clamp01(minSpeedBeforeAllowTurningFactor);
