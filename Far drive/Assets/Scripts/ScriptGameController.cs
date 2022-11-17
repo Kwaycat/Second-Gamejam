@@ -9,6 +9,10 @@ public class ScriptGameController : MonoBehaviour
 {
     public TMP_Text uIText;
     public Scene victoryScene;
+    
+    public ScriptGuideArrow guideArrow;
+    public GameObject getMilkTarget;
+    public GameObject goHomeTarget;
 
     public bool winScreen = false;
 
@@ -17,10 +21,15 @@ public class ScriptGameController : MonoBehaviour
     public bool gotHome = false;
 
     public void EditObjective() {
-        if (goGetMilk == true)
+        if (goGetMilk == true) {
             uIText.text = "Go get milk at the store";
-        if (gotMilk == true)
+            guideArrow.target = getMilkTarget;
+        }
+
+        if (gotMilk == true) {
             uIText.text = "Bring the milk home";
+            guideArrow.target = goHomeTarget;
+        }
     }
 
     public void GoToEndScreen() {
