@@ -10,7 +10,7 @@ public class ScriptCarMovement : MonoBehaviour
     public float turnFactor = 3.5f;
     public float maxSpeed = 20f;
 
-    public float skidTollerance = 1f;
+    public float skidTollerance = 0.75f;
 
     //Local variables
     float accelerationInput = 0;
