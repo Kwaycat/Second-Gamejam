@@ -27,6 +27,6 @@ public class ScriptRestartAndEndGame : MonoBehaviour
             
 
         if (Input.GetKey(KeyCode.Escape))
-                Application.Quit();
+            SceneManager.LoadScene("Main Menu Scene", LoadSceneMode.Single);
     }
 }
